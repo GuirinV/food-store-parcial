@@ -14,9 +14,7 @@ Aplicación frontend de tienda de alimentos que permite:
 - Vite como bundler
 - localStorage para persistencia
 
-## Instalación y ejecución
 
-```bash
 # Instalar dependencias
 pnpm install
 
