@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Store - Catálogo</title>
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Food Store</h1>
+        <nav>
+            <ul>
+                <li><a href="../cart/cart.html">Carrito (<span id="cartCount">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <aside>
+        <h2>Categorías</h2>
+        <ul id="categoryList">
+            <li><a href="#" data-category="all" class="active">Todos</a></li>
+        </ul>
+    </aside>
+
+    <main>
+        <div class="buscador">
+            <form onsubmit="return false">
+                <input type="text" id="searchInput" placeholder="Buscar productos...">
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+
+        <div class="productos">
+            <h2>Productos</h2>
+            <div id="contenedor-productos">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h3>Food Store</h3>
+        <p>Tu tienda de comida rápida favorita</p>
+    </footer>
+
+    <script type="module" src="./home.ts"></script>
+</body>
+
+</html>
